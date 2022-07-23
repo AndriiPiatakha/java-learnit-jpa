@@ -1,0 +1,29 @@
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.0">
+	<persistence-unit name="persistence-unit" transaction-type="RESOURCE_LOCAL">
+		<!-- <persistence-unit name="my-persistence-unit" transaction-type="JTA"> 
+			<jta-data-source>myJtaDataSource</jta-data-source> 
+			<non-jta-data-source>myNonJtaDataSource</non-jta-data-source> -->
+
+		<!-- <class>com.itbulls.learnit.jpa.entities.User</class> -->
+		<!-- <jar-file>my-entities.jar</jar-file> -->
+
+		<!-- <exclude-unlisted-classes>true</exclude-unlisted-classes> -->
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+		<properties>
+			<property name="jakarta.persistence.jdbc.driver"
+				value="com.mysql.jdbc.Driver" />
+			<property name="jakarta.persistence.jdbc.url"
+				value="jdbc:mysql://127.0.0.1:3306/learn_it_jpa" />
+			<property name="jakarta.persistence.jdbc.user" value="root" />
+			<property name="jakarta.persistence.jdbc.password"
+				value="root" />
+			<property
+				name="jakarta.persistence.schema-generation.database.action"
+				value="drop-and-create" />
+			<property name="hibernate.dialect"
+				value="org.hibernate.dialect.MySQL8Dialect" />
+		</properties>
+
+	</persistence-unit>
+</persistence>
