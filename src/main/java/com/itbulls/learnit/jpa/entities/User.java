@@ -62,7 +62,6 @@ public class User {
 	public User(String firstName, String lastName, String email, 
 			Date birthDate, Integer age, Gender gender) {
 		super();
-		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
