@@ -20,7 +20,7 @@
 				value="root" />
 			<property
 				name="jakarta.persistence.schema-generation.database.action"
-				value="drop-and-create" />
+				value="update" />
 			<property name="hibernate.dialect"
 				value="org.hibernate.dialect.MySQL8Dialect" />
 		</properties>
