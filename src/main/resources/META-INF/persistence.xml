@@ -20,9 +20,12 @@
 				value="root" />
 			<property
 				name="jakarta.persistence.schema-generation.database.action"
-				value="update" />
+				value="drop-and-create" />
 			<property name="hibernate.dialect"
 				value="org.hibernate.dialect.MySQL8Dialect" />
+			<!--  
+			<property name = "hibernate.show_sql" value = "true" />
+			-->
 		</properties>
 
 	</persistence-unit>
